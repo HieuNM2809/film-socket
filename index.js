@@ -15,7 +15,7 @@ const io = require('socket.io')(server, {
         methods: ["GET", "POST"]
     }
 });
-
+app.set('view engine', 'ejs');
 io.on("connection", function (socket) {
     // ====================== THÔNG BÁO
     // chat message
