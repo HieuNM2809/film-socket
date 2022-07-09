@@ -80,5 +80,5 @@ app.get("/", function (req, res) {
     res.render("trangchu");
 });
 
-
-server.listen(3000);
+const port = process.env.PORT || 3000 ;
+server.listen(port);
